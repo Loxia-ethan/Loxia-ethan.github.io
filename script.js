@@ -25,6 +25,23 @@ window.addEventListener('scroll', function() {
 // Initial parallax position
 updateParallax();
 
+// Header scroll hide/show effect
+let lastScrollTop = 0;
+const header = document.querySelector('header');
+
+window.addEventListener('scroll', function() {
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (scrollTop > lastScrollTop) {
+        // Scroll Down - Hide header
+        header.style.transform = 'translateY(-100%)';
+    } else {
+        // Scroll Up - Show header
+        header.style.transform = 'translateY(0)';
+    }
+    lastScrollTop = scrollTop;
+});
+
 // Smooth scrolling and breadcrumb navigation
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
