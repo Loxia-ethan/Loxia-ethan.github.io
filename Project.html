@@ -1,0 +1,234 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum Nexus</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Parallax Background Elements -->
+    <div class="parallax-bg parallax-bg-1"></div>
+    <div class="parallax-bg parallax-bg-2"></div>
+    <div class="parallax-bg parallax-bg-3"></div>
+    <div class="parallax-bg parallax-bg-4"></div>
+
+    <header>
+        <nav>
+            <div class="logo">NEXUS</div>
+            <div class="search-container">
+                <input type="text" id="searchInput" class="search-box" placeholder="Search...">
+                <button class="search-btn">🔍</button>
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="breadcrumb" id="breadcrumb">
+            <a href="#home">Home</a>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Quantum Computing Revolution</h1>
+            <p>Harnessing the power of quantum algorithms to solve complex problems at unprecedented speeds.</p>
+            <button class="btn">Explore Technology</button>
+        </div>
+    </section>
+
+    <section id="stats" class="section stats-section">
+        <div class="container">
+            <h2>Our Impact</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number" data-target="1000">0</div>
+                    <div class="stat-label">Clients Served</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="50">0</div>
+                    <div class="stat-label">Countries</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="99">0</div>
+                    <div class="stat-label">Success Rate %</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="24">0</div>
+                    <div class="stat-label">Hours Support</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>Advanced AI Solutions</h2>
+            <p>Our cutting-edge AI systems utilize neural networks and machine learning to deliver intelligent automation and predictive analytics.</p>
+            <div class="features">
+                <div class="feature">
+                    <h3>Neural Processing</h3>
+                    <p>Deep learning algorithms that adapt and evolve in real-time.</p>
+                </div>
+                <div class="feature">
+                    <h3>Quantum Integration</h3>
+                    <p>Seamless integration with quantum computing platforms.</p>
+                </div>
+                <div class="feature">
+                    <h3>Cybersecurity</h3>
+                    <p>Advanced encryption and threat detection systems.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="technologies" class="section">
+        <div class="container">
+            <h2>Core Technologies</h2>
+            <p>Explore our suite of innovative technologies designed for the future.</p>
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <div class="tech-icon">AI</div>
+                    <h3>Artificial Intelligence</h3>
+                    <p>Machine learning models that power intelligent decision-making.</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">QC</div>
+                    <h3>Quantum Computing</h3>
+                    <p>Leveraging quantum algorithms for complex problem-solving.</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">BC</div>
+                    <h3>Blockchain</h3>
+                    <p>Secure, decentralized systems for data integrity.</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">IoT</div>
+                    <h3>IoT Integration</h3>
+                    <p>Connected devices and smart infrastructure solutions.</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">VR</div>
+                    <h3>Virtual Reality</h3>
+                    <p>Immersive experiences for training and simulation.</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">AR</div>
+                    <h3>Augmented Reality</h3>
+                    <p>Overlaying digital information on the physical world.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="section">
+        <div class="container">
+            <h2>What Our Partners Say</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial">
+                    <p>"NEXUS's quantum solutions have revolutionized our data processing capabilities. The speed improvements are unprecedented."</p>
+                    <cite>- TechCorp CEO</cite>
+                </div>
+                <div class="testimonial">
+                    <p>"The AI integration provided by NEXUS has automated our workflows, saving us countless hours and reducing errors."</p>
+                    <cite>- InnovateLabs CTO</cite>
+                </div>
+                <div class="testimonial">
+                    <p>"Their cybersecurity measures have given us peace of mind in an increasingly digital world."</p>
+                    <cite>- SecureNet CIO</cite>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Initiate Contact</h2>
+            <p>Join the future of technology.</p>
+            <div class="contact-grid">
+                <form action="https://formspree.io/f/xyzqwerty" method="POST" id="contactForm">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+                <div class="newsletter">
+                    <h3>Stay Updated</h3>
+                    <p>Subscribe to our newsletter for the latest in tech innovations.</p>
+                    <form action="https://formspree.io/f/xyzqwerty" method="POST" id="subscribeForm">
+                        <input type="email" name="email" placeholder="Enter your email" required>
+                        <button type="submit" class="btn">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>NEXUS</h4>
+                <p>Leading the future of technology with innovative solutions.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Products</h4>
+                <ul>
+                    <li><a href="#">AI Solutions</a></li>
+                    <li><a href="#">Quantum Computing</a></li>
+                    <li><a href="#">Cybersecurity</a></li>
+                    <li><a href="#">IoT Platforms</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Documentation</a></li>
+                    <li><a href="#">Community</a></li>
+                    <li><a href="#">Status</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 NEXUS Technologies. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#">Twitter</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Live Chat Widget -->
+    <div class="chat-widget" id="chatWidget">
+        <div class="chat-header">
+            <span>Chat with us!</span>
+            <button class="chat-close" id="chatClose">✕</button>
+        </div>
+        <div class="chat-messages" id="chatMessages">
+            <div class="chat-message bot-message">
+                <p>Hello! How can we help you today?</p>
+            </div>
+        </div>
+        <div class="chat-input-area">
+            <input type="text" id="chatInput" placeholder="Type a message..." />
+            <button id="chatSend">Send</button>
+        </div>
+    </div>
+    <button class="chat-toggle" id="chatToggle">💬</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
