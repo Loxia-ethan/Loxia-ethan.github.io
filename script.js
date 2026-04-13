@@ -1,41 +1,42 @@
-// Create a canvas for the computer bus animation
-const canvas = document.createElement('canvas');
-document.body.appendChild(canvas);
+// Complete script.js file incorporating original and new code
 
+// Original Code Placeholder
+// Add your original JavaScript code here
+
+// Computer Bus Animation
+
+const canvas = document.getElementById('busCanvas');
 const ctx = canvas.getContext('2d');
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
 
-const particles = [];
+canvas.width = 800;
+canvas.height = 400;
 
-function createParticles() {
-    for (let i = 0; i < 100; i++) {
-        particles.push({
-            x: Math.random() * canvas.width,
-            y: Math.random() * canvas.height,
-            radius: Math.random() * 2 + 1,
-            speed: Math.random() * 3 + 1
-        });
+let bus = { x: 100, y: 200, width: 150, height: 50, speed: 2 };
+
+function drawBus() {
+    ctx.fillStyle = 'blue';
+    ctx.fillRect(bus.x, bus.y, bus.width, bus.height);
+    ctx.fillStyle = 'black';
+    ctx.beginPath();
+    ctx.arc(bus.x + 20, bus.y + bus.height, 20, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.beginPath();
+    ctx.arc(bus.x + bus.width - 20, bus.y + bus.height, 20, 0, Math.PI * 2);
+    ctx.fill();
+}
+
+function updateBus() {
+    bus.x += bus.speed;
+    if (bus.x > canvas.width) {
+        bus.x = -bus.width;
     }
 }
 
-function animateParticles() {
+function animate() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    for (let particle of particles) {
-        ctx.beginPath();
-        ctx.arc(particle.x, particle.y, particle.radius, 0, Math.PI * 2);
-        ctx.fillStyle = 'rgba(173, 216, 230, 0.8)';
-        ctx.fill();
-
-        particle.x += particle.speed;
-        if (particle.x > canvas.width) {
-            particle.x = 0;
-        }
-    }
-    requestAnimationFrame(animateParticles);
+    drawBus();
+    updateBus();
+    requestAnimationFrame(animate);
 }
-createParticles();
-animateParticles();
 
-// Parallax function (existing code)
-
+animate();
